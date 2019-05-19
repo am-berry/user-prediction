@@ -13,9 +13,10 @@ from datetime import date
 from contextlib import contextmanager
 import time
 
-PATH_TO_DATA = '/data/'
+PATH_TO_DATA = 'data/'
 path_to_train = PATH_TO_DATA + 'train_sessions.csv'
 path_to_test = PATH_TO_DATA + 'test_sessions.csv'
+path_to_site_dict = PATH_TO_DATA + 'site_dic.pkl'
 AUTHOR = 'Aman_Berry'
 
 r = 42
@@ -33,7 +34,7 @@ def timer(name):
     yield
     print(f'[{name}] done in {time.time() - t0:.0f} s')
 
-with open('site_dic.pkl', 'rb') as f:
+with open(path_to_site_dict, 'rb') as f:
      site_dict = pickle.load(f)
 
 def prepare_sparse_features(path_to_train, path_to_test, path_to_site_dict,
