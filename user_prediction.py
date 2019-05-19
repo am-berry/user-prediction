@@ -14,9 +14,9 @@ from contextlib import contextmanager
 import time
 
 PATH_TO_DATA = 'data/'
-path_to_train = PATH_TO_DATA + 'train_sessions.csv'
-path_to_test = PATH_TO_DATA + 'test_sessions.csv'
-path_to_site_dict = PATH_TO_DATA + 'site_dic.pkl'
+path_to_train = os.path.join(PATH_TO_DATA, 'train_sessions.csv')
+path_to_test = os.path.join(PATH_TO_DATA, 'test_sessions.csv')
+path_to_site_dict = os.path.join(PATH_TO_DATA, 'site_dic.pkl')
 AUTHOR = 'Aman_Berry'
 
 r = 42
