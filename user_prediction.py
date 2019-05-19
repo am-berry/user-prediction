@@ -13,9 +13,9 @@ from datetime import date
 from contextlib import contextmanager
 import time
 
-PATH_TO_DATA = ''
-path_to_train = 'train_sessions.csv'
-path_to_test = 'test_sessions.csv'
+PATH_TO_DATA = '/data/'
+path_to_train = PATH_TO_DATA + 'train_sessions.csv'
+path_to_test = PATH_TO_DATA + 'test_sessions.csv'
 AUTHOR = 'Aman_Berry'
 
 r = 42
